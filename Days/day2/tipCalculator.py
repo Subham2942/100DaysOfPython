@@ -12,5 +12,5 @@ while not valid:
     else:
         print("Tip or number of people cannot be zero or less")
    
-Result = (amount + amount*(tip/100)) / people
+Result = round((amount + amount*(tip/100)) / people, 2)
 print(f"The Amount to be paid by each person is Rs {Result}")
